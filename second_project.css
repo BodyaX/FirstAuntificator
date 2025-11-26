@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2d3748;
+    font-size: 28px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    margin: 8px 0;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background: #f8fafc;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    transform: translateY(-2px);
+}
+
+input::placeholder {
+    color: #a0aec0;
+}
+
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #5a6fd8, #6a4190);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+p {
+    text-align: center;
+    color: #718096;
+    margin: 15px 0 0 0;
+    font-size: 14px;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Дополнительные стили для улучшения UX */
+.form-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    color: #718096;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.password-hint {
+    font-size: 12px;
+    color: #a0aec0;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
